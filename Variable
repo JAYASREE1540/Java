@@ -1,0 +1,9 @@
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    int a=10;
+    int g=98;
+    int sum=a+g;
+    System.out.print("Sum is "+ a + " and "+ g +" is "+sum);
+  }
+}
