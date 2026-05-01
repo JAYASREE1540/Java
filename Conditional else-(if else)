@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    int k=9;
+    int m=0;
+    if(k==m){
+      System.out.print("SAME");
+    }
+    else{
+      if(k>m){
+        System.out.print("K is bigger");
+      }
+      else{
+        System.out.print("K is smaller");
+      }
+    }
+  }
+}
