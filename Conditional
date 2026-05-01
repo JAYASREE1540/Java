@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    int k=9;
+    int n=7;
+    if(k==n){
+      System.out.print("EQUAL");
+    }
+    else{
+      System.out.print("NOT EQUAL");
+    }
+  }
+}
