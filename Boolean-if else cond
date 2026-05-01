@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    boolean isRaining=false;
+    if(isRaining){
+      System.out.print("Raining outside...outside come fast");
+    }
+    else{
+      System.out.print("There is sunny... no rainy outside,it's a lie");
+    }
+  }
+}
