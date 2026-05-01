@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    int g=9;
+    int y=0;
+    if(g==y){
+        System.out.print("Equal");
+    }
+    else if(g<y){
+      System.out.print("Greater");
+    }
+    else{
+      System.out.print("Lesser");
+    }
+  }
+}
