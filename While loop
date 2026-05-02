@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    /*while(condition){
+    execute code
+    }
+    */
+    int y=9;
+    while(y>0){
+      System.out.println("Greater than zero");
+      /*whithout y-- statement then the output goes infinite loop,
+      because it always check condition and never stop iteration*/
+      y--;
+    }
+  }
+}
