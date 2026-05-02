@@ -12,6 +12,6 @@ public class Main {
         double h = sc.nextDouble();
         System.out.println("Your number is " + h);
 
-        sc.close(); // ✅ close at the end
+        sc.close(); 
     }
 }
