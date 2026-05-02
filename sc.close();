@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter a number: ");
+    Double num=sc.nextDouble();
+    System.out.print("Your number: "+num);
+    sc.close();
+/*⚠️ Important Notes:
+
+Once you call sc.close(), you cannot use the Scanner again
+If you try → it gives error ❌
+Avoid closing System.in too early (especially in large programs).show a code for example
+*/
+/*Example code: 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        sc.close();   Scanner closed here ❌
+        int b = sc.nextInt();  ❌ ERROR: Scanner already closed
+        System.out.println(a + b);
+    }
+}*/
+  }
+}
