@@ -1,3 +1,10 @@
+/*Method	          Description
+sc.nextInt()	      Read integer
+sc.nextDouble()	    Read decimal
+sc.next()	          Read single word
+sc.nextLine()	      Read full line
+sc.nextBoolean()	   Read true/false*/
+
 import java.util.Scanner;
 public class Main{
 public static void main(String[] args){
