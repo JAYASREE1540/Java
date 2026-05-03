@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main{
+public static void main(String[] args){
+/*Switch syntax
+Switch(expe){
+case x:
+//code statement
+break;
+case y:
+//code statement
+break;
+case z:
+//code statement
+break;
+Default:
+//code statement */
+int k=2;
+switch(k){
+case 1:
+System.out.print("Hi");
+break;
+case 2:
+System.out.print("Hello");
+break;
+default:
+System.out.print("Failed");
+}
+}
+}
