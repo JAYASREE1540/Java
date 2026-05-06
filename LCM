@@ -1,0 +1,39 @@
+/*✅ Algorithm: LCM of Two Numbers
+Input: Two integers a and b
+Output: LCM of a and b
+🔹 Steps
+Start
+Input two numbers a and b
+Store product
+product = a × b
+Find GCD using Euclidean Algorithm
+Repeat while b ≠ 0:
+r = a % b
+a = b
+b = r
+When loop ends:
+gcd = a
+Compute LCM
+lcm = product / gcd
+Display LCM
+Stop*/
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number1: ");
+        int k=sc.nextInt();
+        System.out.print("Enter a number2: ");
+        int l=sc.nextInt();
+        int pro=k*l;
+        while(l!=0){
+            int r=k%l;
+            k=l;
+            l=r;
+        }
+        System.out.println("GCD is "+k);
+        int lcm=pro/k;
+        System.out.print("LCM is "+lcm);
+    }
+}
