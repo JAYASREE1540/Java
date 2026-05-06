@@ -1,0 +1,27 @@
+/*✅ Algorithm (Step-by-Step)
+Input: Two integers a and b
+Output: GCD of a and b
+Start
+Read two numbers a and b
+Repeat until b ≠ 0:
+Find remainder → r = a % b
+Assign a = b
+Assign b = r
+When b = 0, GCD = a
+Stop*/
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number1: ");
+        int a=sc.nextInt();
+        System.out.print("Enter a number2: ");
+        int b=sc.nextInt();
+        while(b!=0){
+            int r=a%b;
+            a=b;
+            b=r;
+        }
+        System.out.print(a);
+    }
+}
