@@ -1,0 +1,35 @@
+/*Start
+Input a number n
+Store original number: temp = n
+Set reverse = 0
+Repeat while n > 0:
+digit = n % 10
+reverse = reverse * 10 + digit
+n = n / 10
+If reverse == temp
+Print Palindrome
+Else print Not Palindrome
+Stop*/
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:  ");
+        int y=sc.nextInt();
+        int temp=y;
+        int dig;
+        int rev=0;
+        while(y>0){
+            dig=y%10;
+            rev=rev*10+dig;
+            y=y/10;
+        }
+        if(rev==temp)
+        {
+            System.out.print(temp+ " Is Palindrome");
+        }
+        else{
+                   System.out.print(temp+ " Is Not a Palindrome");
+        }
+    }
+}
