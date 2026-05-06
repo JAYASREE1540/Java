@@ -1,0 +1,38 @@
+/*✅ Sum of Digits Algorithm (Step-by-Step)
+Start
+Input a number n
+Set sum = 0
+Repeat while n > 0:
+digit = n % 10 → get last digit
+sum = sum + digit → add digit to sum
+n = n / 10 → remove last digit
+Print sum
+Stop8*/
+/*✅ Sum of Digits Algorithm (Step-by-Step)
+Start
+Input a number n
+Set sum = 0
+Repeat while n > 0:
+digit = n % 10 → get last digit
+sum = sum + digit → add digit to sum
+n = n / 10 → remove last digit
+Print sum
+Stop8*/
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int y=sc.nextInt();
+        int dig;
+        int sum=0;
+        while(y>0){
+            dig=y%10;
+            sum=sum+dig;
+            y=y/10;
+        }
+        System.out.print(sum);
+    }
+}
+
+
