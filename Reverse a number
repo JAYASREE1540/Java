@@ -1,0 +1,26 @@
+/*✅ Reverse a Number Algorithm (Step-by-Step)
+Start
+Input a number n
+Set reverse = 0
+Repeat while n > 0:
+digit = n % 10 → get last digit
+reverse = reverse * 10 + digit → build reversed number
+n = n / 10 → remove last digit
+Print reverse
+Stop*/
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n=sc.nextInt();
+        int rev=0;
+        int dig;
+        while(n>0){
+            dig=n%10;
+            rev=rev*10+dig;
+            n=n/10;
+        }
+        System.out.print(rev);
+    }
+}
